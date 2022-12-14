@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171a21;
+}
+
+header {
+    background-color: #171a21;
+    height: 104px;
+}
+
+.header-container {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.navbar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.navimg img {
+    width: 177px;
+    height: 44px;
+}
+
+.navmenu ul {
+    display: flex;
+    list-style: none;
+}
+
+.navmenu ul a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
+}
+
+.navmenu ul a:hover {
+    color: white;
+}
+
+.installsteam  {
+    width: 110px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: #5c7e10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.installsteam button {
+    width: 110px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: url('../img//steam_download.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 2px center;
+    padding-left: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.register {
+    font-size: 11px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.loginbtn {
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+}

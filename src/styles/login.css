@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #171a21;
+    height: 104px;
+}
+
+.header-container {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.navbar {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.navimg img {
+    width: 177px;
+    height: 44px;
+}
+
+.navmenu ul {
+    display: flex;
+    list-style: none;
+}
+
+.navmenu ul a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #b8b6b4;
+    text-transform: uppercase;
+}
+
+.navmenu ul a:hover {
+    color: white;
+}
+
+.installsteam  {
+    width: 110px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: #5c7e10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.installsteam button {
+    width: 110px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: url('../img//steam_download.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 2px center;
+    padding-left: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.register {
+    font-size: 11px;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.loginbtn {
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 720px;
+}
+
+.loginmainimg {
+    width: 100%;
+    height: 100%;
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+}
+
+.signin {
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    background-color: #181a21;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+
+.logininputs {
+    width: 60%;
+    padding-top: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+.username input,
+.password input {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #32353c;
+    margin-top: 6px;
+    color: #FFFFFF;
+    padding-left: 7px;
+}
+
+.password {
+    margin-top: 20px;
+}
+
+label {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.accountname {
+    color: #1999ff;
+    font-weight: bold;
+}
+
+.rememberme input {
+    margin-top: 20px;
+}
+
+
+.labelrememberme {
+    font-size: 10px;
+}
+
+.signinbtn {
+    text-align: center;
+}
+
+p {
+    margin-top: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.submitbtn {
+    margin: 10px;
+    width: 240px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    cursor: pointer;
+}
+
+.qrcode {
+    width: 40%;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 12px;
+    color: #1999ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.qrimg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.qrimg img {
+    width: 65%;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+.mobilesteam {
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+footer {
+    background-color: #171a21;
+    width: 60%;
+    margin: auto;
+}
+
+.topimg img {
+    width: 200px;
+    height: 150px;
+}
+
+.footertop {
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+}
+
+.toptext,
+.topimg,
+.topbtn {
+    width: 18%;
+}
+
+.topbtn {
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+.join {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.middletextp {
+    font-size: 10px;
+    color: #b8b6b4;
+}
+
+.middlerightimg img,
+.middleimg img {
+    width: 90px;
+    height: 26px;
+}
+
+.footermiddle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.miidletext {
+    width: 70%;
+}
