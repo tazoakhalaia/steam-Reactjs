@@ -8,7 +8,6 @@ import { useForm } from 'react-hook-form'
 import PC from '../img/pc.png'
 import VALVE from '../img/footerLogo_valve_new.png'
 import FOOTERSTEAMLOGO from '../img/logo_steam_footer.png'
-import ProtectedRoute from './ProtectedRoute'
 
 function Login() {
     useEffect(()=> {
@@ -20,12 +19,18 @@ function Login() {
     
     const[loginName,setloginName] = useState("")
     const[loginpassword,setloginPassword] = useState('')
-    const[access,setAccess] = useState(true)
+    const[allow,notallow] = useState(true)
 
     const { 
         handleSubmit,
      } = useForm()
 
+     let notFind;
+     if(allow){
+        notFind = null
+     }else{
+        notFind = <h2 className='notallow'>User not found, try again</h2>
+     }
 
      const onSubmit = (data) => {
         try {
@@ -35,10 +40,14 @@ function Login() {
                     return user.AccountName === loginName && user.Password === loginpassword 
                 })
                if(find){
-                console.log("find");
+                console.log(find.id);
+                notallow(true)
+                localStorage.setItem("accountname", loginName)
+                localStorage.setItem("password", loginpassword)
+                localStorage.setItem('id', find.id)
                 navigate('/profile')
-                
                }else{
+                notallow(false)
                 console.log("not information");
                }
             })
@@ -46,6 +55,7 @@ function Login() {
             console.log(error);
         }
    }
+
 
   return (
     <div>
@@ -93,7 +103,8 @@ function Login() {
                 <label className='labelrememberme'><input type='checkbox'/>Remember me</label>
             </div>
             <div className='signinbtn'>
-            <input type="submit" className='submitbtn'  value="SIGN IN"></input>
+            <input type="submit" className='submitbtn' value="SIGN IN"></input>
+            {notFind}
             <p><u>Help, I can't sign in</u></p>
             </div>
             </form>
@@ -136,7 +147,6 @@ function Login() {
             </div>
         </div>
     </footer>
-    <ProtectedRoute access={access}  />
 </div>
   )
 }

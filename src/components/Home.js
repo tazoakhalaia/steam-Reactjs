@@ -4,6 +4,7 @@ import SteamLogo from '../img/logo_steam.svg'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
+
     useEffect(() => {
         document.title = "Welcome to Steam"
     }, [])
@@ -33,7 +34,6 @@ export default function Home() {
                     <Link to='/register'><button className='register'>Register</button></Link>
                 </div>
             </div>
-
         </header>
     </div>
   )

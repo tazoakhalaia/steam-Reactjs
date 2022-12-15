@@ -20,7 +20,8 @@ function Register() {
                       AccountName: accountName ,
                       Password: password,
                       Email: email,
-                      Country: countryValue
+                      Country: countryValue,
+                      games: []
                   })
               }).then(res => res.json()).then(data => {
                 console.log(data);

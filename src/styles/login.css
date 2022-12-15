@@ -291,3 +291,8 @@ footer {
 .miidletext {
     width: 70%;
 }
+
+.notallow {
+    font-size: 10px;
+    color: #ff2828;
+}
