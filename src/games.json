@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Call Of Duty",
+        "price": 69,
+        "desc": "The CALL OF DUTY® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 1,
+        "url": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/meta-images/reveal/mw2-reveal-meta-share.jpg"
+    },
+    {
+        "name": "Grand Theft Auto V",
+        "price": 59,
+        "desc": "Grand Theft Auto V® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 2,
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1671485100"
+    },
+    {
+        "name": "Sonic",
+        "price": 19,
+        "desc": "Socin® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 3,
+        "url": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/2x1_NSwitchDS_SonicOrigins_image1600w.jpg"
+    },
+    {
+        "name": "Dota 2",
+        "price": 62,
+        "desc": "Dota 2® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 4,
+        "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg?t=1666237243"
+    },
+    {
+        "name": "Fifa 23",
+        "price": 49,
+        "desc": "Fifa 23® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 5,
+        "url": "https://cdn1.epicgames.com/offer/f5deacee017b4b109476933f7dd2edbd/EGS_EASPORTSFIFA23StandardEdition_EACanada_S1_2560x1440-4d9a3cf478e066032bcbdba3d2832dd6"
+    },
+    {
+        "name": "Apex Legends",
+        "price": 24,
+        "desc": "Apex Legends® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 6,
+        "url": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg"
+    },
+    {
+        "name": "God of War Ragnarok",
+        "price": 27,
+        "desc": "God of War Ragnarok® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 7,
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/capsule_616x353.jpg?t=1642526157"
+    },
+    {
+        "name": "Uncharted",
+        "price": 31,
+        "desc": "Uncharted® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 8,
+        "url": "https://cdn1.epicgames.com/offer/8b2d6cf2b45b41f1abe91bc5b7c1e8f9/EGS_UNCHARTEDLegacyofThievesCollection_NaughtyDogLLC_S1_2560x1440-1e077bb3b244c8ed172b5ad9256d5017"
+    }
+
+]
+
