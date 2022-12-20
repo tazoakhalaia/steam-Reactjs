@@ -7,6 +7,7 @@ import Register from './components/Register'
 import Profile from './components/Profile'
 import ProtectedRoute from './components/ProtectedRoute';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter> 

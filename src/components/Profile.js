@@ -18,20 +18,8 @@ function Profile() {
   const[index,setIndex] = useState(0)
   const[disabledmove,setDisablemove] = useState(false)
   const[disableleft,setDisableleft] = useState(true)
-  const[list,setList] = useState([
-      {
-          name: "hello",
-          url: Slider1
-      },
-      {
-          name: "hello",
-          url: Slider1
-      },
-      {
-          name: "hello",
-          url: Slider1
-      }
-  ])
+  const[wishlist, setWishlist] = useState([])
+
 
   function moveRight(){
       setIndex(index + 1)
@@ -66,25 +54,11 @@ function Profile() {
   let id = localStorage.getItem('id')
 
   useEffect(() => {
-    fetch(`http://localhost:3000/users/${id}`).then(res => res.json())
-    .then(data => {
-      console.log( data.games[0].name);
-      for(let list in data){
-        setGames([data.games[0].name , data.games[0].price ])
-      }
-    })
+    document.title = "Welcome To Steam " + localStorage.getItem('accountname')
   }, [])
 
+
   return (
-    // <div style={{color: "red"}}>Profile
-    // <div>{
-    //     games.map((game,index) => {
-    //      return <h1 key={index}>{game}</h1>
-    //     })
-    //     }
-    // </div>
-    // <button onClick={logout}>logout</button>
-    // </div>
     <div>
         <header>
             <div className='header-container'>
@@ -163,7 +137,7 @@ function Profile() {
                 <div className='categories'>
                     <ul>
                     <li><a href='#'>Your Store</a></li>
-                    <li><a href='#'>New % Noteworthy</a></li>
+                    <li><a href='#'>New & Noteworthy</a></li>
                     <li><a href='#'>Categories</a></li>
                     <li><a href='#'>Point Shop</a></li>
                     <li><a href='#'>News</a></li>
@@ -196,8 +170,22 @@ function Profile() {
                         <h1 className='price'>Price: <u>{games.price}</u> $</h1>
                         <p className='desc'>{games.desc}</p>
                         </div>
-                        <button className='buy' onClick={(e) => {
-                            console.log(games.name);
+                        <button className='buy' onClick={() => {
+                            setWishlist([{
+                                gamename: games.name,
+                                gameurl: games.url,
+                                gameprice: games.price
+                            }])
+                            fetch(`http://localhost:3000/users/${id}`, {
+                                method: "PATCH",
+                                headers: {"Content-type" : "application/json"},
+                                body: JSON.stringify({
+                                    wishlist
+                                })
+                            })
+                            .then(res => res.json())
+                            .then(data => console.log(data))
+
                         }}>Buy</button>
                     </div>
                 })

@@ -5,12 +5,14 @@
       "Password": "admin",
       "Email": "admin@gmail.com",
       "Country": "",
-      "games": [
+      "wishlist": [
         {
-          "name": "Call of Duty",
-          "price": 71
+          "gamename": "Grand Theft Auto V",
+          "gameurl": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1671485100",
+          "gameprice": 59
         }
       ],
+      "games": [],
       "id": 1
     },
     {
@@ -18,6 +20,13 @@
       "Password": "1234567",
       "Email": "tazo@gmail.com",
       "Country": "Angola",
+      "wishlist": [
+        {
+          "gamesname": "Call Of Duty",
+          "gamesurl": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/meta-images/reveal/mw2-reveal-meta-share.jpg",
+          "gamesprice": 69
+        }
+      ],
       "games": [],
       "id": 2
     },
@@ -26,6 +35,13 @@
       "Password": "tom",
       "Email": "tom@gmail.com",
       "Country": "Bahrain",
+      "wishlist": [
+        {
+          "gamesname": "Call Of Duty",
+          "gamesurl": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/meta-images/reveal/mw2-reveal-meta-share.jpg",
+          "gamesprice": 69
+        }
+      ],
       "games": [],
       "id": 3
     }

@@ -101,59 +101,6 @@ header {
     color: #FFFFFF;
 }
 
-.gamediv {
-    width: 100%;
-    width: 60%;
-    margin: auto;
-    background-color: #202d39;
-    border-radius: 4px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.ss {
-    display: flex;
-    color: #FFFFFF;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-    align-items: center;
-}
-
-
-.name img {
-    width: 150px;
-    height: 80px;
-    margin-top: 10px;
-}
-
-.cost {
-    margin-left: 50px;
-}
-
-.buygame {
-    width: 100px;
-    height: 20px;
-    position: absolute;
-    right: 0;
-}
-
-.gameimg {
-    margin-right: 20px;
-}
-
-.nameofgame,
-.price {
-    font-size: 14px;
-    margin-right: 5px;
-}
-
-.decription {
-    color: #FFFFFF;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
 /*main */
 
 .main {
@@ -385,3 +332,4 @@ hr {
     font-size: 14px;
     margin-top: 5px;
 }
+

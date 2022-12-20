@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/home.css'
 import SteamLogo from '../img/logo_steam.svg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Steamcard from '../img/steamcard.png'
 import Slider1 from '../img/slider1.jpg'
 import Slider2 from '../img/slider2.jpg'
@@ -15,6 +15,7 @@ import Games from '../games.json'
 
 
 export default function Home() {
+    const navigate = useNavigate()
 
     useEffect(() => {
         document.title = "Welcome to Steam"
@@ -24,20 +25,6 @@ export default function Home() {
     const[index,setIndex] = useState(0)
     const[disabledmove,setDisablemove] = useState(false)
     const[disableleft,setDisableleft] = useState(true)
-    const[list,setList] = useState([
-        {
-            name: "hello",
-            url: Slider1
-        },
-        {
-            name: "hello",
-            url: Slider1
-        },
-        {
-            name: "hello",
-            url: Slider1
-        }
-    ])
 
     function moveRight(){
         setIndex(index + 1)
@@ -135,7 +122,7 @@ export default function Home() {
                 <div className='categories'>
                     <ul>
                     <li><a href='#'>Your Store</a></li>
-                    <li><a href='#'>New % Noteworthy</a></li>
+                    <li><a href='#'>New & Noteworthy</a></li>
                     <li><a href='#'>Categories</a></li>
                     <li><a href='#'>Point Shop</a></li>
                     <li><a href='#'>News</a></li>
@@ -168,7 +155,9 @@ export default function Home() {
                         <h1 className='price'>Price: <u>{games.price}</u> $</h1>
                         <p className='desc'>{games.desc}</p>
                         </div>
-                        <button className='buy'>Buy</button>
+                        <button className='buy' onClick={(e) => {
+                            navigate("/login")
+                        }}>Buy</button>
                     </div>
                 })
                }

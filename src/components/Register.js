@@ -21,6 +21,7 @@ function Register() {
                       Password: password,
                       Email: email,
                       Country: countryValue,
+                      wishlist: [],
                       games: []
                   })
               }).then(res => res.json()).then(data => {
