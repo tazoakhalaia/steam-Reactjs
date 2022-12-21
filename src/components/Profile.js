@@ -18,7 +18,6 @@ function Profile() {
   const[index,setIndex] = useState(0)
   const[disabledmove,setDisablemove] = useState(false)
   const[disableleft,setDisableleft] = useState(true)
-  const[wishlist, setWishlist] = useState([])
 
 
   function moveRight(){
@@ -171,20 +170,22 @@ function Profile() {
                         <p className='desc'>{games.desc}</p>
                         </div>
                         <button className='buy' onClick={() => {
-                            setWishlist([{
-                                gamename: games.name,
-                                gameurl: games.url,
-                                gameprice: games.price
-                            }])
                             fetch(`http://localhost:3000/users/${id}`, {
                                 method: "PATCH",
                                 headers: {"Content-type" : "application/json"},
                                 body: JSON.stringify({
-                                    wishlist
+                                    wishlist: [
+                                        {
+                                             gamename: games.name,
+                                             gameurl: games.url,
+                                             gameprice: games.price
+                                        }
+                                    ] 
                                 })
                             })
                             .then(res => res.json())
                             .then(data => console.log(data))
+                            navigate("/purchase")
 
                         }}>Buy</button>
                     </div>

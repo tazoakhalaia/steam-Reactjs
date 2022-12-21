@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color:  white;
+    background-color: #23262E;
+}
+
+.mains{
+    width: 70%;
+    margin: auto;
+}
+
+.purchaseheader {
+    height: 106px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paymentinfo {
+    background-color: #66c0f4;
+    padding: 10px;
+}
+.paymentinfo h1 {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.purchasesteamlogo img {
+    width: 176px;
+    height: 45px;
+}
+
+.paymentcontainer {
+    width: 65%;
+    float: left;
+}
+
+.paymentname {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.containerleft {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.containerright {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+}
+
+.pleaseselect {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.select select {
+    margin-top: 10px;
+    width: 200px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 0px #45556c;
+}
+
+.cardnumber  {
+    margin-top: 20px;
+}
+
+.cardnumber h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cardnumber input {
+    margin-top: 10px;
+    width: 200px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+}
+
+.billinginformation {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.bill {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.userdesc {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.userdesc input {
+    width: 80%;
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+}
+
+.usernmln {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.billingadress {
+    margin-top: 20px;
+}
+
+.billingadress input {
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+    width: 200px;   
+}
+
+.billadress {
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.expirationdate {
+    display: flex;
+    margin-top: 50px;
+}
+
+.expirationdate select {
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.expirationdate input {
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+    width: 60px;  
+    margin-left: 10px;
+}
+
+.dateinfo {
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.city {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.city input {
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.cityname {
+    margin-left: 10px;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.zpcode {
+    margin-left: 10px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.zipcode {
+    margin-left: 10px;
+}
+
+.zipcode input {
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.phonenumber {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.nubmer {
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.phonenumber input {
+    margin-top: 10px;
+    background-color: rgba( 0, 0, 0, 0.4);
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    outline: none;
+    box-shadow: 1px 1px 0px #45556c;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.donepurchase {
+    display: flex;
+    justify-content: center;
+}
+
+.donepurchase button {
+    background: rgba(121,153,5,1);
+    background: -webkit-linear-gradient( top, rgba(121,153,5,1) 5%, rgba(83,105,4,1) 95%);
+    background: linear-gradient( to bottom, rgba(121,153,5,1) 5%, rgba(83,105,4,1) 95%);
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.right {
+    width: 35%;
+    float: right;
+    margin-top: 50px;
+    box-shadow: 1px 1px 10px #45556c;
+}
+
+.banksfoto {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.chosengame {
+    margin-top: 30px;
+}
+
+.gamedesc h1 {
+    font-size: 16px;
+     margin-top: 10px;
+     color: #66c0f4;
+}
+
+.nameprice {
+    color: #FFFFFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
