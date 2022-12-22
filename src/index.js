@@ -7,6 +7,7 @@ import Register from './components/Register'
 import Profile from './components/Profile'
 import ProtectedRoute from './components/ProtectedRoute';
 import Purchase from './components/Purchase';
+import Library from './components/Library';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
     <Route element={<ProtectedRoute />} >
       <Route path='/profile' element={<Profile />} />
       <Route path='/purchase' element={<Purchase />} />
+      <Route path='/library' element={<Library />} />
     </Route>
   </Routes>
   </BrowserRouter>

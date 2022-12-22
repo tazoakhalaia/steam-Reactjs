@@ -310,3 +310,17 @@ body {
     text-transform: uppercase;
     margin-top: 10px;
 }
+
+.chosengame {
+    text-align: center;
+}
+
+.chosengame img { 
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.price {
+    margin-top: 20px;
+}

@@ -343,3 +343,8 @@ hr {
     font-size: 14px;
     margin-top: 5px;
 }
+
+.purchasefooter {
+    background-color: red;
+    height: 200px;
+}

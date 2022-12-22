@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../styles/purchase.css'
 import SteamLogo from '../img/logo_steam.svg'
 import Bank from '../img/visa.png'
@@ -12,10 +12,15 @@ import Bank6 from '../img/mastercard.png'
 
 function Purchase() {
   let id = localStorage.getItem('id')
-  const[game,setGame] = useState([])
+  let navigate = useNavigate()
+  const[game,setGame] = useState("")
+  const[price,setPrice] = useState("")
   const[day,setDay] = useState([])
   const[year,setYear] = useState([])
+  const[gameimg,setGameimg] = useState("")
   const[banks,setBanks] = useState([Bank,Bank1,Bank2,Bank3,Bank4,Bank5,Bank6])
+  const[purchasedisable,setPurchaseDisable] = useState(false)
+  
 
   useEffect(() => {
     document.title = "Purchase"
@@ -31,10 +36,31 @@ function Purchase() {
     fetch(`http://localhost:3000/users/${id}`)
   .then(res => res.json())
   .then(data =>{
-    setGame(prev => [...prev, data.wishlist[0].gamename, data.wishlist[0].gameprice])
+    setGame(data.wishlist[0].gamename)
+    setGameimg(data.wishlist[0].gameurl)
+    setPrice(data.wishlist[0].gameprice)
   })
-  console.log(game);
   }, [])
+
+  function buyGame(){
+    fetch(`http://localhost:3000/users/${id}`, {
+      method: "PATCH",
+      headers: {"Content-type" : "application/json"},
+      body: JSON.stringify({
+        games: [
+          {
+            gamename: game,
+            gameurl: gameimg
+          }
+        ]
+      })
+    })
+  .then(res => res.json())
+  .then(data =>{
+    console.log(data);
+  })
+  navigate('/library')
+  }
 
   return (
     <div>
@@ -47,6 +73,7 @@ function Purchase() {
             <Link to='/profile'><img src={SteamLogo} /></Link>
           </div>
         </div>
+        <form onSubmit={buyGame}>
         <div className='paymentcontainer'>
           <h1 className='paymentname'>Payment Method</h1>
           <div className='containerleft'>
@@ -64,14 +91,14 @@ function Purchase() {
             </div>
             <div className='cardnumber'>
               <h5>Card Number</h5>
-              <input type="text" />
+              <input  type="text" />
             </div>
             <div className='billinginformation'>
               <h1 className='bill'>Billing Information</h1>
               <div className='userdesc'>
                 <div className='name'>
                   <h5 className='usernmln'>First Name</h5>
-                  <input />
+                  <input type="text" />
                 </div>
                 <div className='lastname'>
                 <h5 className='usernmln'>Last Name</h5>
@@ -123,11 +150,12 @@ function Purchase() {
                 <input type="number" />
               </div>
               <div className='donepurchase'>
-                <button className='paymentdone' disabled>Purchase</button>
+                <button className='paymentdone' disabled={purchasedisable}>Purchase</button>
               </div>
             </div>
           </div>
         </div>
+        </form>
         <div className='right'>
           <div className='banksfoto'>
             {banks.map((bank,index) => {
@@ -138,12 +166,12 @@ function Purchase() {
               technology certified by a digital certificate.</p>
           </div>
           <div className='chosengame'>
-          {game.map((elements,index) => {
-       return <div className='gamedesc'>
+          <div  className='gamedesc'>
         <h5 className='nameprice'>Game Name and Game Price</h5>
-         <h1 key={index}>{elements}</h1>
+         <h1>{game}</h1>
        </div>
-    })}
+    <h2 className='price'>Price: {price} $</h2>
+    <img src={gameimg} />
           </div>
         </div>
       </div>

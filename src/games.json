@@ -54,7 +54,29 @@
         "desc": "Uncharted® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
         "id": 8,
         "url": "https://cdn1.epicgames.com/offer/8b2d6cf2b45b41f1abe91bc5b7c1e8f9/EGS_UNCHARTEDLegacyofThievesCollection_NaughtyDogLLC_S1_2560x1440-1e077bb3b244c8ed172b5ad9256d5017"
+    },
+    {
+        "name": "CS GO",
+        "price": 11,
+        "desc": "CS GO® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 9,
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/730/capsule_616x353.jpg?t=1641233427"
+    }, 
+    {
+        "name": "DEMEO",
+        "price": 36,
+        "desc": "DEMEO® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 10,
+        "url": "https://www.godisageek.com/wp-content/uploads/Demeo-PC-Edition-Review.jpg"
+    },
+    {
+        "name": "DETROIT",
+        "price": 39,
+        "desc": "DETROIT® you know and love now on your mobile device. With multiplayer (MP) modes such as Team Deathmatch, Domination,",
+        "id": 11,
+        "url": "https://cdn.akamai.steamstatic.com/steam/apps/1222140/capsule_616x353.jpg?t=1625648054"
     }
+
 
 ]
 

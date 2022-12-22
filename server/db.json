@@ -7,13 +7,18 @@
       "Country": "",
       "wishlist": [
         {
-          "gamename": "Apex Legends",
-          "gameurl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg",
-          "gameprice": 24
+          "gamename": "Uncharted",
+          "gameurl": "https://cdn1.epicgames.com/offer/8b2d6cf2b45b41f1abe91bc5b7c1e8f9/EGS_UNCHARTEDLegacyofThievesCollection_NaughtyDogLLC_S1_2560x1440-1e077bb3b244c8ed172b5ad9256d5017",
+          "gameprice": 31
         }
       ],
-      "games": [],
-      "id": 1
+      "id": 1,
+      "games": [
+        {
+          "gamename": "Uncharted",
+          "gameurl": "https://cdn1.epicgames.com/offer/8b2d6cf2b45b41f1abe91bc5b7c1e8f9/EGS_UNCHARTEDLegacyofThievesCollection_NaughtyDogLLC_S1_2560x1440-1e077bb3b244c8ed172b5ad9256d5017"
+        }
+      ]
     },
     {
       "AccountName": "tazo",
@@ -22,9 +27,9 @@
       "Country": "Angola",
       "wishlist": [
         {
-          "gamesname": "Call Of Duty",
-          "gamesurl": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/meta-images/reveal/mw2-reveal-meta-share.jpg",
-          "gamesprice": 69
+          "gamename": "God of War Ragnarok",
+          "gameurl": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/capsule_616x353.jpg?t=1642526157",
+          "gameprice": 27
         }
       ],
       "games": [],
@@ -37,9 +42,9 @@
       "Country": "Bahrain",
       "wishlist": [
         {
-          "gamesname": "Call Of Duty",
-          "gamesurl": "https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/meta-images/reveal/mw2-reveal-meta-share.jpg",
-          "gamesprice": 69
+          "gamename": "Apex Legends",
+          "gameurl": "https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg",
+          "gameprice": 24
         }
       ],
       "games": [],
